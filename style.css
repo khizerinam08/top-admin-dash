@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    
+}
+div{
+}
+.main{
+    grid-column: 2/3;
+    background-color: rgb(234, 234, 234);
+}
+
+.sidebar{
+    grid-row: 1 / 3;
+    background-color: rgb(41, 136, 200);
+    color: white
+
+}
+
+.nav{
+    margin-left: 20px;
+    padding-right: 30px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px
+}
+
+.searchbar{
+    background-color: rgb(212, 212, 212);
+    height: 20px;
+    border-radius: 20px;
+}
+
+.topbar{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 1fr 2fr;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr;
+    gap: 20px;
+    padding: 20px;
+}
+.projects > div{
+    height: 140px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    
+}
+.bottom-bar{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.yellow{
+    background-color: rgb(255, 153, 0);
+    height: 100%;
+    width: 5px;
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    left: 0px;
+
+}
+svg{
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    fill: white;
+}
