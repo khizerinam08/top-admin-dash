@@ -5,16 +5,21 @@
     box-sizing: border-box;
 }
 
+.top-right{
+    white-space: nowrap;
+}
 
-
+.Hi{
+    font-size: 0.9em;
+    font-weight: lighter;
+}
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     
 }
-div{
-}
+
 .main{
     grid-column: 2/3;
     background-color: rgb(234, 234, 234);
@@ -40,6 +45,13 @@ li{
 
 }
 
+.pfp {
+    
+    width: 30px;  /* Percentage of the parent container */
+    height: 30px;  /* 'auto' maintains the aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+}
 .brand{
     display: flex;
     align-items: center;
@@ -56,15 +68,26 @@ li{
     background-color: rgb(212, 212, 212);
     height: 20px;
     border-radius: 20px;
+    width: 80%;
+    
+    
 }
 
+.big-pfp{
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
 .topbar{
     display: grid;
-    grid-template-columns: 1fr 7fr 1fr 1fr 2fr;
+    grid-template-columns: 30px 1fr 30px 30px auto;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
     padding: 5px;
-    
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
 .projects{
@@ -82,11 +105,16 @@ li{
     background-color: white;
     border-radius: 5px;
     position: relative;
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.2);
     
 }
 .bottom-bar{
     padding-left: 10px;
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 .yellow{
     background-color: rgb(255, 153, 0);
@@ -103,4 +131,10 @@ svg{
     height: 25px;
     margin-right: 10px;
     fill: white;
+}
+
+.bell{
+    margin: 0px;
+    fill: black;
+    width: 30px;
 }
